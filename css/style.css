@@ -616,8 +616,8 @@ a.logo-dark-theme {
 }
 
 .mailing-wrapper {
-  width: 570px;
-  margin-left: 93px;
+  min-width: 570px;
+  margin-left: auto;
 }
 
 .mailing-wrapper p {
@@ -633,9 +633,41 @@ a.logo-dark-theme {
   margin-bottom: 20px;
 }
 
+.mailing-wrapper-field {
+}
+
 .mailing-wrapper-user-email {
-  width: 358px;
+  min-width: 360px;
   height: 50px;
+  margin-right: 12px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--contrast-color);
+}
+
+.mailing-wrapper-user-email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mailing-btn-wrapper {
+  position: relative;
+  display: inline-flex;
+}
+
+.mailing-btn {
+  padding-left: 28px;
+  text-align: left;
+}
+
+.icon-send-icon {
+  fill: var(--contrast-color);
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* ---- END CONTACTS ---- */
@@ -916,7 +948,6 @@ a.logo-dark-theme {
 }
 
 .modal-form-agreement {
-  /*position: relative;*/
   display: flex;
   margin-bottom: 30px;
 }
@@ -932,9 +963,6 @@ a.logo-dark-theme {
 
 .modal-form-check-desc::before {
   content: "";
-  /*position: absolute;
-  left: 0;
-  top: 0;*/
   display: inline-block;
   margin-right: 8px;
   width: 16px;

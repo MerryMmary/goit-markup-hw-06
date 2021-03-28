@@ -381,8 +381,17 @@
 
             <div class="mailing-wrapper">
                 <p>Подпишитесь на рассылку</p>
-                <input type="email" name="user-email" class="mailing-wrapper-user-email" placeholder="E-mail">
-                <button type="submit" class="mailing-wrapper-btn modal-btn btn">Подписаться</button>
+                <form action="" class="mailing-form">
+                    <label class="mailing-wrapper-field">
+                            <input type="email" name="user-email" class="mailing-wrapper-user-email" placeholder="E-mail">
+                    </label>
+                    <span class="mailing-btn-wrapper">
+                        <button type="submit" class="mailing-btn modal-btn btn">Подписаться</button>
+                        <svg width="24" height="24" class="icon-send-icon">
+                            <use href="./images/sprite.svg#icon-icon-send"></use>
+                        </svg>
+                    </span>
+                </form>
             </div>      
         </div>
     </footer>
@@ -402,7 +411,7 @@
                 <label class="modal-window-field">
                     Имя
                     <span class="modal-form-input-wrapper">
-                        <input type="text" name="user-name" class="modal-form-input" required minlength="2" autocomplete="" autofocus>
+                        <input type="text" name="user-name" class="modal-form-input" required minlength="2" autocomplete="on" autofocus>
                         <svg width="18" height="18" class="modal-form-icon">
                            <use href="./images/sprite.svg#icon-person-black-18dp"></use>
                         </svg>
